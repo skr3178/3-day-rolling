@@ -1,0 +1,109 @@
+    1  sudo apt update
+    2  sudo apt upgrade
+    3  nvidia-smi
+    4  sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
+    5  sudo apt install curl # if you haven't already installed curl
+    6  curl -s https://raw.githubusercontent.com/ros/rosdistro/master/ros.asc | sudo apt-key add -
+    7  sudo apt update
+    8  sudo apt install ros-noetic-desktop-full
+    9  source /opt/ros/noetic/setup.bash
+   10  sudo apt install git-all
+   11  git--version
+   12  git --version
+   13  git clone https://github.com/ZJU-FAST-Lab/EGO-Planner-v2.git
+   14  ls
+   15  sudo apt-get install -y ros-noetic-joy
+   16  cat /proc/driver/nvidia/version
+   17  sudo ubuntu-drivers list
+   18  lspci
+   19  lspci -v
+   20  lspci -v | less
+   21  lspci | grep VGA
+   22  roscore
+   23  clear
+   24  roscore
+   25  sudo apt-get install ros-noetic-pcl*
+   26  lsb_release -a
+   27  lspci
+   28  sudo apt-get install ros-noetic-opencv*
+   29  sudo ubuntu-drivers list
+   30  sudo apt install ubuntu-drivers-common
+   31  sudo ubuntu-drivers list
+   32  sudo apt update
+   33  sudo ubuntu-drivers list
+   34  lshw
+   35  rviz
+   36  rosrun 
+   37  ros run 
+   38  ros
+   39  source /opt/ros/noetic/setup.bash
+   40  ros
+   41  echo "source /opt/ros/noetic/setup.bash" >> ~/.bashrc
+   42  source ~/.bashrc
+   43  ros
+   44  sudo apt install python3-rosdep
+   45  sudo rosdep init
+   46  rosdep update
+   47  sudo rosdep update
+   48  mkdir -p ~/catkin_ws/src
+   49  cd ~/catkin_ws/
+   50  catkin_make
+   51  ls
+   52  cd src
+   53  ls
+   54  cd ..
+   55  ls
+   56  source /opt/ros/noetic/setup.bash
+   57  rosrun rviz rviz
+   58  clear
+   59  rosrun rviz rviz
+   60  sudo apt-get install -y cpufrequtils
+   61  sudo cpufreq-set -g performance
+   62  sudo cpufreq-info
+   63  source devel/setup.bash
+   64  roslaunch random_goals random_goals.launch
+   65  source devel/setup.bash
+   66  roslaunch ego_planner wait_for_goals.launch
+   67  source devel/setup.bash
+   68  roslaunch ego_planner swarm.launch
+   69  clear
+   70  roslaunch ego_planner circle_exchange.launch
+   71  clear
+   72  roslaunch ego_planner swarm_large.launch
+   73  roslaunch ego_planner single_drone_interactive.launch
+   74  roslaunch ego_planner multi_drone_interactive.launch
+   75  clear
+   76  cd ..
+   77  ls
+   78  cd tracking_ws
+   79  cd ..
+   80  cd interlaced_flight_ws/
+   81  catkin_make
+   82  ls
+   83  source devel/setup.bash
+   84  cd devel
+   85  ls
+   86  cat setup.bash
+   87  cd ..
+   88  roslaunch ego_planner viz.launch
+   89  roslaunch ego_planner rviz.launch
+   90  sudo apt install git
+   91  git --version
+   92  git clone https://github.com/ZJU-FAST-Lab/EGO-Planner-v2.git
+   93  ls
+   94  cd EGO-Planner-v2
+   95  ls
+   96  cd swarm-playground
+   97  ls
+   98  cd main_ws
+   99  ls
+  100  catkin_make
+  101  source devel/setup.bash
+  102  source devel/setup.bash 
+  103  roslaunch ego_planner rviz.launch
+  104  source /opt/ros/noetic/setup.bash
+  105  sudo rosdep init
+  106  rosrun rviz rviz
+  107  roscore
+  108  rosrun rviz rviz
+  109  history > history.txt
